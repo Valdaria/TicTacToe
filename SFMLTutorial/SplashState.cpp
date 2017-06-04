@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "SplashState.hpp"
+#include "MainMenuState.hpp"
 
 #include "DEFINITIONS.hpp"
 
@@ -30,7 +31,7 @@ namespace sid{
 	void SplashState::Update ( float dt ){
 		if ( _clock.getElapsedTime ( ).asSeconds ( )>SPLASH_STATE_SHOW_TIME ){
 			// switch to main menu
-			std::cout<<"Go to main menu"<<std::endl;
+			_data->machine.AddState ( StateRef ( new MainMenuState ( _data ) ), true );
 		}
 	}
 

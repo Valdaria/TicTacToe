@@ -146,6 +146,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateMachine.cpp" />
   </ItemGroup>
@@ -154,9 +155,14 @@
     <ClInclude Include="DEFINITIONS.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="InputManager.hpp" />
+    <ClInclude Include="MainMenuState.hpp" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SplashState.hpp" />
     <ClInclude Include="State.hpp" />
     <ClInclude Include="StateMachine.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SFMLTutorial.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
